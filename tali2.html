@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		#back{
+			display:none;
+			z-index:1;
+			position:absolute;
+			left:93px;
+			top:37px;
+		}
+	</style>
+	<head>
+	
+	<title> המשרד של טלי </title>
+	
+	</head>
+	<script src="script.js"> </script>
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+		<!-- <img id="back" src="imgs/front.png" alt="image here"> -->
+		<img id="back" src="imgs/arrowl.png" alt="leftArrow" style="height:30px;display:none;" >
+		
+		<img id="tali2" src="imgs/tali2.png" border="0" width="881" height="496" orgWidth="881" orgHeight="532" usemap="#image-maps-2017-02-22-125240" alt="" />
+		<map name="image-maps-2017-02-22-125240" id="ImageMapsCom-image-maps-2017-02-22-125240">
+		<area id="tali1L" alt="" title="" href="tali1.html" shape="rect" coords="0,0,26,496" style="outline:none;" target="_self"     />
+		<area shape="rect" coords="879,494,881,496" alt="Image Map" style="outline:none;" title="Image Map" href="#" />
+		<area id="taliCloset" onclick="div_show()" alt="" title="" href="#" shape="poly" coords="457,440,369,437,339,424,208,426,182,440,98,437,105,419,100,405,107,400,108,42,94,35,95,20,457,21,460,36,446,42,447,400,453,405,452,417,443,417" style="outline:none;" target="_self"     />
+		<area id="taliBin" alt="" title="" href="#" shape="poly" coords="457,440,369,437,339,424,497,371,510,457,604,491,669,451,682,371,632,364,627,353,580,349,568,357" style="outline:none;" target="_self"     />
+		</map>
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<form action="#" id="form" method="post" name="form">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide()">
+		<h2>הכנס קוד לפתיחת הארון</h2>
+		<hr>
+			<table>
+			<tr style="height:50px;">
+			<td style="width:50px;background-color:#4D62CD"></td>
+			<td><input id="b" name="b" type="number" style="width:50px"></td>
+			</tr>
+			<tr style="height:50px;">
+			<td style="width:50px;background-color:#00CC00"></td>
+			<td><input id="g" name="g" type="number" style="width:50px"></td>
+			</tr><tr style="height:50px;">
+			<td style="width:50px;background-color:#892118"></td>
+			<td><input id="r" name="r" type="number" style="width:50px"></td>
+			</tr>
+			  </tr><tr style="height:50px;">
+			<td style="width:50px;background-color:#F8E72A"></td>
+			<td><input id="y" name="y" type="number" style="width:50px"> </td>
+			</tr>
+			</table>
+			<hr>
+		<a href="javascript:%20check_empty()" id="submit">שלח</a>
+		</form>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+
+		
+	</body>
+	
+</html>
