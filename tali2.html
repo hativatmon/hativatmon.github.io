@@ -25,7 +25,7 @@
 		<map name="image-maps-2017-02-22-125240" id="ImageMapsCom-image-maps-2017-02-22-125240">
 		<area id="tali1L" alt="" title="" href="tali1.html" shape="rect" coords="0,0,26,496" style="outline:none;" target="_self"     />
 		<area shape="rect" coords="879,494,881,496" alt="Image Map" style="outline:none;" title="Image Map" href="#" />
-		<area id="taliCloset" onclick="div_show()" alt="" title="" href="#" shape="poly" coords="457,440,369,437,339,424,208,426,182,440,98,437,105,419,100,405,107,400,108,42,94,35,95,20,457,21,460,36,446,42,447,400,453,405,452,417,443,417" style="outline:none;" target="_self"     />
+		<area id="taliCloset" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="457,440,369,437,339,424,208,426,182,440,98,437,105,419,100,405,107,400,108,42,94,35,95,20,457,21,460,36,446,42,447,400,453,405,452,417,443,417" style="outline:none;" target="_self"     />
 		<area id="taliBin" alt="" title="" href="#" shape="poly" coords="457,440,369,437,339,424,497,371,510,457,604,491,669,451,682,371,632,364,627,353,580,349,568,357" style="outline:none;" target="_self"     />
 		</map>
 
@@ -34,9 +34,10 @@
 		<div id="popupContact">
 		<!-- Contact Us Form -->
 		<form action="#" id="form" method="post" name="form">
-		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide()">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
 		<h2>הכנס קוד לפתיחת הארון</h2>
 		<hr>
+			<div class="abc" id="ClosetCode">
 			<table>
 			<tr style="height:50px;">
 			<td style="width:50px;background-color:#4D62CD"></td>
@@ -54,9 +55,17 @@
 			<td><input id="y" name="y" type="number" style="width:50px"> </td>
 			</tr>
 			</table>
-			<hr>
-		<a href="javascript:%20check_empty()" id="submit">שלח</a>
+			<a href="javascript:%20check_empty()" id="submit">שלח</a>
+			</div>
+			<div id="truiOpen" style="display:none;">
+				<img id="Image-Maps-Com-image-maps-2017-02-23-090114" src="imgs/trui.png" border="0" width="361" height="305" orgWidth="723" orgHeight="610" usemap="#image-maps-2017-02-23-090114" alt="" />
+				<map name="image-maps-2017-02-23-090114" id="ImageMapsCom-image-maps-2017-02-23-090114">
+				<area id="clip" alt="" title="" href="#" shape="rect" coords="103,60,163,142" style="outline:none;" target="_self" onclick="thrug_options()"    />
+				</map>
+			</div>
+		<hr>
 		</form>
+		
 		</div>
 		<!-- Popup Div Ends Here -->
 		</div>
