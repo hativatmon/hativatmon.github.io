@@ -20,15 +20,29 @@
 		
 		if (document.getElementById('y').value == "3" & document.getElementById('r').value == "2" 
 	& document.getElementById('b').value == "3" & document.getElementById('g').value == "1"){
-		alert("Code OK");
+		//alert("Code OK");
 		div_hide("ClosetCode");
 		div_show("truiOpen");
 		
 	}
 	else {
-		alert("code BAD");
+		alert("הקוד שהוכנס שגוי");
 	}
 	}
+	}
+	
+	function open_comp(){
+		if(document.getElementById('uname').value == ""){
+			alert("יש להכניס שם משתמש");
+		}else{
+			if(document.getElementById('uname').value == "taliv"){
+				alert("From: Liat Ben Ari\nSent: Tuesday, February 28, 2017 08:00 AM\nTo: Tali Vaknin\nSubject: אירוע חטיבה\n\nהיי טלי,\nהאירוע שנבחר הוא אופציה מספר X\n\nבברכה,\nליאת בן ארי\n\n\n");
+				div_hide("abc");
+			}
+			else{
+				alert("שם המשתמש שהוכנס שגוי");
+			}
+		}
 	}
 	//Function To Display Popup
 	function div_show(ObjId) {

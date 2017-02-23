@@ -15,8 +15,8 @@
 	
 	</head>
 	<script src="script.js">
-
 	</script>
+	<link href="elements.css" rel="stylesheet">
 	<body>
 			
 		<img id="tali1" src="imgs/tali1.png" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-02-22-125041" alt="" />
@@ -24,8 +24,27 @@
 		<area id="tali1R" alt="" title="" href="tali2.html" shape="rect" coords="854,0,881,496" style="outline:none;" target="_self"     />
 		<area shape="rect" coords="879,494,881,496" alt="Image Map" style="outline:none;" title="Image Map" href="#" />
 		<area id="taliPlant" onclick="script:alert('חג אביב שמח');" alt="" title="" href="#" shape="poly" coords="744,323,754,287,780,319,813,323,799,340,840,368,811,375,820,389,799,390,811,406,796,406,792,463,739,463,727,412,729,393,711,394,712,372,680,363,717,334,710,314" style="outline:none;" target="_self"     />
-		<area id="taliComp" alt="" title="" href="#" shape="poly" coords="134,191,260,189,258,274,204,273,204,295,186,296,184,272,136,274" style="outline:none;" target="_self"     />
+		<area id="taliComp" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="134,191,260,189,258,274,204,273,204,295,186,296,184,272,136,274" style="outline:none;" target="_self"     />
 		</map>
+		
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<form action="#" id="form" method="post" name="form">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		<h2>הכנס שם משתמש</h2>
+		<hr>
+		<input id="uname" name="uname" type="text">
+		<hr>
+		<a href="#" id="submit" onclick="open_comp()">כניסה למחשב</a>
+		</div>
+		<hr>
+		</form>
+		
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
 
 
 		
