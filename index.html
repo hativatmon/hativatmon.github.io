@@ -1,8 +1,60 @@
 <!DOCTYPE html>
 <html>
+<style>
+	body {
+		overflow: hidden;
+		background-image:url(imgs/back.png);
+		font-family:sans-serif;
+    }
+    #content {
+        width: 83%;
+		max-width:calc(100%-200px);
+        height:100%;
+        max-height: calc(100% - 80px);
+        overflow: scroll;
+        padding: 0px 1% !important;
+        margin-top: 80px !important;
+		margin-left:200px;
+    }
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		width: 100%;
+		height: 80px;
+		background-image: url(imgs/headBack.png);
+		position: fixed;
+		top: 0;
+	}
+	aside {
+		display:block;
+		position:fixed;
+		background-image:url(imgs/headBack.png);
+		top: 80px;
+		width: 200px;
+		height:100%;
+		max-height:calc(100%-80px);
+		
+	}
+</style>
 <body>
-<h1>חטיבתמון 2017</h1>
-<p>בהצלחה!</p>
-<h2> <a href="tali1.html"> התחל </a> <h2>
+<header>
+	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:3px;opacity:1;margin-left:10px;margin-right:10px;">
+	<img src="imgs/heading.png" alt="חטיבתמון 2017" width="25%" style="padding:3px;">
+	</div>
+</header>
+<aside> 
+	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:8px;opacity:1; height:85%;">
+	<div><a href="help.html" target="main"><img src="imgs/helpIcon.png" alt="help" style="width:100px;padding:10px;"></a></div>
+	<div><a href="tali1.html" target="main"><img src="imgs/homeIcon.png" alt="home" style="width:100px;padding:10px;"></a></div>
+	<div><a href="https://goo.gl/forms/rkzSUPd5Mioe9C3o2" target="main"><img src="imgs/ansIcon.png" alt="answer" style="width:100px;padding:10px;"></a></div>
+	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="main"><img src="imgs/emailIcon.png" alt="email" style="width:100px;padding:10px;"></a></div>
+	</div>
+</aside>
+<iframe name="main" style="border:none" id="content" src="help.html" align="center"></iframe>
+
 </body>
 </html>
