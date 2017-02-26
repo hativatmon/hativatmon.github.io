@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		#back{
+			display:none;
+			z-index:1;
+			position:absolute;
+			left:93px;
+			top:37px;
+		}
+	</style>
+	<head>
+	
+	<title> חד"ן אשדוד </title>
+	
+	</head>
+	<script src="script.js">
+	</script>
+	<link href="elements.css" rel="stylesheet">
+	<body>
+
+		<img id="hadan" src="imgs/hadan.png" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-02-25-221542" alt="" />
+		<map name="image-maps-2017-02-25-221542" id="ImageMapsCom-image-maps-2017-02-25-221542">
+		<area id="gotoAshdod" alt="" title="" href="ashdod.html" shape="rect" coords="0,470,881,496" style="outline:none;" target="_self"     />
+		<area id="hadanCoffee" onclick="script:alert('אין לשתות בחדן');" alt="" title="" href="#" shape="rect" coords="85,212,196,339" style="outline:none;" target="_self"     />
+		<area id="makrenArea" onclick="div_show('abc');" href="#" shape="poly" coords="810,300,801,252,708,253,697,298" style="outline:none;" target="_self"/>
+		</map>
+
+		
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<div id="tofes">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		<h2>הזן קוד להפעלת המקרן</h2>
+		<hr>
+			<div class="abc" id="makren">
+			<input id="makrenCode" name="makrenCode" type="text" style="width:50px"></td>
+			<hr>
+			<a href="#" onclick="makrenClick()" id="submit">הפעל</a>
+			</div>
+		<hr>
+		</div>
+		
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+
+
+		
+	</body>
+	
+</html>
