@@ -82,7 +82,8 @@
 		if (document.getElementById('makrenCode').value == ""){alert("יש להכניס קוד להפעלת המקרן");}
 		else{if(document.getElementById('makrenCode').value== "1701"){
 				div_hide('abc');
-				document.getElementById('hadan').src = "imgs/hadanon.png";
+				document.getElementById('hadan').style.display = "none";
+				document.getElementById('hadanOn').style.display="block";
 			}else{alert("הקוד שהוכנס שגוי");}
 		}
 	}
