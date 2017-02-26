@@ -58,3 +58,22 @@
 		alert("האופציות לאירוע חטיבה הן:\n1. יום ספורט\n2. שייט אגמים\n3. ערב חטיבה\n4. טיסה לחול\n5. טיול חד יומי בארץ\n6. רכיבה אתגרית\n7. נופש בארץ\n8. פעילות אתגרית\n");
 		div_hide("abc");
 	}
+	
+	function hallTrashAlert(){
+		alert("הקוד לפתיחת הארונית הוא:\nשנת הקמת אלטל");
+	}
+	
+	function hallCabinetClick(){
+		if (document.getElementById('cabCode').value == ""){
+			alert("יש להזין קוד לפתיחת הארון");
+		}
+		else{
+			if (document.getElementById('cabCode').value =="1979"){
+				div_show("cabPaper");
+				div_hide("hallCabinet");
+			}
+			else{
+				alert("קוד שגוי");
+			}
+		}
+	}

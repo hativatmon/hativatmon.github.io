@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		#back{
+			display:none;
+			z-index:1;
+			position:absolute;
+			left:93px;
+			top:37px;
+		}
+	</style>
+	<head>
+	
+	<title> צאלים </title>
+	
+	</head>
+	<script src="script.js">
+	</script>
+	<link href="elements.css" rel="stylesheet">
+	<body>
+			
+		<img id="Image-Maps-Com-image-maps-2017-02-25-203128" src="imgs/hall.png" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-02-25-203128" alt="" />
+		<map name="image-maps-2017-02-25-203128" id="ImageMapsCom-image-maps-2017-02-25-203128">
+		<area id="gotoLiat" alt="" title="" href="" shape="rect" coords="614,158,758,423" style="outline:none;" target="_self"/>
+		<area id="gotoTali" alt="" title="" href="tali1.html" shape="rect" coords="123,156,267,418" style="outline:none;" target="_self"/>
+		<area id="hallBoard" alt="" title="" href="" shape="rect" coords="289,153,476,282" style="outline:none;" target="_self"/>
+		<area id="exitHall" alt="" title="" href="main.html" shape="rect" coords="0,470,881,496" style="outline:none;" target="_self"/>
+		<area id="hallCab" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="594,263,510,261,488,275,486,454,577,457,597,429" style="outline:none;" target="_self"/>
+		<area id="hallTrash" onclick="hallTrashAlert();" alt="" title="" href="#" shape="poly" coords="461,380,430,374,408,386,411,434,433,443,454,436" style="outline:none;" target="_self"/>
+		</map>
+		
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<div id="tofes">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		<h2>הזן קוד לפתיחת הארונית</h2>
+		<hr>
+			<div class="abc" id="hallCabinet">
+			<input id="cabCode" name="cabCode" type="text" style="width:50px"></td>
+			<hr>
+			<a href="#" onclick="hallCabinetClick()" id="submit">פתח</a>
+			</div>
+			<div id="cabPaper" style="display:none;">
+				<img src="imgs/hallGreet.png" />
+			</div>
+		<hr>
+		</div>
+		
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+
+
+		
+	</body>
+	
+</html>
