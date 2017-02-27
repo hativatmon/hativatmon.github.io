@@ -78,6 +78,32 @@
 		}
 	}
 	
+	function garageLockerClick(){
+		if (document.getElementById('cabCode').value == ""){
+			alert("יש להזין קוד לפתיחת הארון");
+		}
+		else{
+			
+			if (document.getElementById('cabCode').value =="674895"){
+				div_show("cabPaper");
+				div_hide("garageCabinet");
+			}
+			else{
+				alert("קוד שגוי");
+			}
+		}
+	}
+	
+	function garageCabinetClick(){
+		if(document.getElementById('f1').value == "#00b050" & document.getElementById('f2').value == "#c00000" & document.getElementById('f3').value == "#7030a0" & document.getElementById('f4').value == "#ffff00" & document.getElementById('f5').value == "#00b0f0" & document.getElementById('f6').value == "#000000" & document.getElementById('f7').value == "#ed7d31")
+		{
+			alert("ok");
+		}
+		else {
+			alert(document.getElementById('f1').value+" "+document.getElementById('f2').value+" "+document.getElementById('f3').value+" "+document.getElementById('f4').value+" "+document.getElementById('f5').value+" "+document.getElementById('f6').value+" "+document.getElementById('f7').value+" ");
+		}		
+	}
+	
 	function makrenClick(){
 		if (document.getElementById('makrenCode').value == ""){alert("יש להכניס קוד להפעלת המקרן");}
 		else{if(document.getElementById('makrenCode').value== "1701"){
@@ -89,3 +115,8 @@
 	}
 	
 	function liatPlantClick(){alert("למה לחטט בצמחים?");}
+	
+	function carHorn() {
+		var carAudio = new Audio('sound/car.mp3');
+             carAudio.play();
+     }
