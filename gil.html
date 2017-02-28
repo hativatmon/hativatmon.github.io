@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title> המשרד של גיל</title>
+	
+	</head>
+	<script src="script.js">
+	</script>
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+	<img id="Image-Maps-Com-gil" src="http://www.image-maps.com/m/private/0/kc8s5abvl71v1vpcn556o5smb1_gil.png" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#gil" alt="" />
+	<map name="gil" id="ImageMapsCom-gil">
+	<area id="goback" alt="" title="" href="ashdod.html" shape="rect" coords="0,468,881,496" style="outline:none;" target="_self"     />
+	<area id="gilBin" onclick="div_show('abc2')" alt="" title="" href="#" shape="poly" coords="780,367,814,338,853,351,848,377,846,434,815,445,784,436" style="outline:none;" target="_self"     />
+	<area id="gilComp" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="462,223,539,222,539,294,465,318,406,299,461,285" style="outline:none;" target="_self"     />
+	<area id="gilCabinet" onclick="div_show('cabinet')" alt="" title="" href="#" shape="poly" coords="153,268,91,269,71,289,68,409,136,405,157,367" style="outline:none;" target="_self"     />
+	<area id="gilPrinter" onclick="div_show('printer');" alt="" title="" href="#" shape="poly" coords="736,235,738,207,780,209,781,235,803,239,804,258,805,284,787,282,796,297,723,296,724,284,711,289,706,259,709,241" style="outline:none;" target="_self"     />
+	</map>
+	
+		<div id="printer" class="abc2">
+		<!-- Popup Div Starts Here -->
+			<div id="printPopup" class="popupContact2">
+				<div id="printTofes" class="tofes2" style="width:600px;max-width:600px;">
+				<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('printer')">
+				<div id="printerPass">
+					<h2>הכנס קוד</h2>
+					<hr>
+					<input id="printerPassCode" name="printerPassCode" type="password">
+					<hr>
+					<a href="#" id="submit" onclick="gilPrinterClick()">הדפס</a>
+				</div>
+				<div id="pagePrint" style="display:none">
+					<img src="imgs/gilPrint.png" style="width:600px">
+				</div>
+				</div>
+				
+			</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+	
+		<div id="cabinet" class="abc2">
+		<!-- Popup Div Starts Here -->
+			<div id="cabinetPopup" class="popupContact2">
+				<div id="cabinetTofes" class="tofes2">
+				<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('cabinet')">
+				<div id="cabinetPass">
+					<h2>הכנס קוד</h2>
+					<hr>
+					<input id="cabinetPassCode" name="cabinetPassCode" type="password">
+					<hr>
+					<a href="#" id="submit" onclick="gilCabinetClick()">פתיחה</a>
+				</div>
+				<div id="openCabinet" style="display:none">
+					<img src="imgs/gilCabinet.png" style="width:400px">
+				</div>
+				</div>
+				
+			</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+			<div id="popupContact" class="form">
+				<div id="tofes">
+				<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+				<div id="compPass">
+					<h2>הכנס סיסמא</h2>
+					<hr>
+					<input id="gilPass" name="gilPass" type="password">
+					<hr>
+					<a href="#" id="submit" onclick="gilComp()">כניסה למחשב</a>
+				</div>
+				<div id="openComp" style="display:none">
+					<img src="imgs/gilComp.png" style="width:400px">
+				</div>
+				</div>
+				
+			</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="abc2" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc2')">
+			<img src="imgs/gilBin.png" width="500px">
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+	</body>
+	
+</html>

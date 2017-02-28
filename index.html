@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="compiled/flipclock.css">
-
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="compiled/flipclock.js"></script>
+		<script type="text/javascript" src="countDown/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="countDown/jquery.countdownTimer.js"></script>
+		<link rel="stylesheet" type="text/css" href="countDown/jquery.countdownTimer.css" />
 	</head>
 <style>
 	body {
-		overflow: hidden;
 		background-image:url(imgs/back.png);
 		font-family:sans-serif;
+		direction:rtl;
     }
     #content {
         width: 83%;
@@ -21,7 +20,7 @@
         overflow: scroll;
         padding: 0px 1% !important;
         margin-top: 80px !important;
-		margin-left:200px;
+		margin-right:200px;
     }
 	html, body {
 		height: 100%;
@@ -45,7 +44,13 @@
 		height:100%;
 		max-height:calc(100%-80px);
 		overflow:scroll;
-		
+	}
+	
+	.sideText{
+		color:#008080;
+		font-weight:bold;
+		font-size:18px;
+		text-shadow: 1px 1px #000000;
 	}
 </style>
 <body>
@@ -56,20 +61,36 @@
 	
 </header>
 <aside> 
-	<div align="center" style="overflow:scroll;background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:8px;opacity:1; height:85%;">
-	<br>
-	<iframe src="http://free.timeanddate.com/countdown/i5lw28gy/n676/cf13/cm0/cu4/ct0/cs1/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw256/szh108/tat%D7%94%D7%9B%D7%A8%D7%96%D7%AA%20%D7%94%D7%96%D7%95%D7%9B%D7%94%20%D7%91%D7%A2%D7%95%D7%93/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2017-04-06T00:00:00" allowTransparency="true" frameborder="0" width="97" height="80"></iframe>
-	<div><a href="help.html" target="main"><img src="imgs/helpIcon.png" alt="help" style="width:80px;padding:10px;"></a></div>
-	<div><a href="main.html" target="main"><img src="imgs/homeIcon.png" alt="home" style="width:80px;padding:10px;"></a></div>
-	<div><a href="https://goo.gl/forms/rkzSUPd5Mioe9C3o2" target="main"><img src="imgs/ansIcon.png" alt="answer" style="width:80px;padding:10px;"></a></div>
-	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="main"><img src="imgs/emailIcon.png" alt="email" style="width:80px;padding:10px;"></a></div>
+	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:8px;opacity:1">
+	<div id="countdowntimer" style="padding-top:5px;"><span class="sideText">נותרו עוד</span><br><span id="future_date"><span></div><span class="sideText">להכרזת הזוכה</span>
+	<div><a href="help.html" target="main"><img src="imgs/helpIcon.png" alt="help" style="width:80px;"></a></div>
+	<div><a href="main.html" target="main"><img src="imgs/homeIcon.png" alt="home" style="width:80px;"></a></div>
+	<div><a href="https://goo.gl/forms/rkzSUPd5Mioe9C3o2" target="main"><img src="imgs/ansIcon.png" alt="answer" style="width:80px;"></a></div>
+	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="main"><img src="imgs/emailIcon.png" alt="email" style="width:80px;"></a></div>
 	<div><strong style="font-size:14px;">מספר מבקרים</strong>
-		<a href="https://www.freecounterstat.com"><img src="https://counter9.fcs.ovh/private/freecounterstat.php?c=a10ce29678485a35a5a437f6b967a1e2" border="0" title="page hit counter" alt="page hit counter"></a>
+		<a href="#" title="visitor counter widget"><img src="https://counter1.fcs.ovh/private/freecounterstat.php?c=3b6facbfa803b60c35ec01698c79df68" border="0" title="visitor counter widget" alt="visitor counter widget"></a>
+
 	</div>
 	</div>
 	
 </aside>
 <iframe name="main" style="border:none" id="content" src="help.html" align="center"></iframe>
 
+<script>
+$(function(){
+	$('#future_date').countdowntimer({
+		dateAndTime : "2017/04/06 00:00:00",
+		size : "sm",
+		regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+		regexpReplaceWith: "$1 <span class='displayformat'> ימים</span> <br> $2 <span class='displayformat'>שעות</span> <br> $3 <span class='displayformat'>דקות</span> <br> $4<span class='displayformat'> שניות</span>"
+	});
+});
+</script>
+<style type="text/css">
+.displayformat {
+	font-size:12px;
+	font-style: italic;
+}
+</style>	
 </body>
 </html>

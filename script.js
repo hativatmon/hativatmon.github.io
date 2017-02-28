@@ -120,3 +120,69 @@
 		var carAudio = new Audio('sound/car.mp3');
              carAudio.play();
      }
+	 
+	 function emptyC(){alert("הארון ריק");}
+	 
+	 function garbage(){alert("נא לא לחטט בזבל");}
+	 
+	 function garageBox(){alert("תעודת משלוח:\n - שביר - \n\nכמות: 500\nפריט: מצות\n\n-סופק ע''י מו צימה צות בע''מ-");}
+	 
+	 function factMidClick()
+	 {
+		 if (document.getElementById('factMid').value == ""){
+			 alert("");
+			 } else{
+				 if(document.getElementById('factMid').value == "6562765"){
+					 div_hide("factMidClose");
+					 div_show("factOpen");}
+		 else{alert("bad code");}
+	 }}
+	 
+	 function gilComp(){
+		 if (document.getElementById('gilPass').value == "" ){alert("יש להכניס סיסמא");}
+		 else{
+			 if(document.getElementById('gilPass').value == "iLoveWine"){
+				 div_hide("compPass");
+				 div_show("openComp");
+			 }else {
+				 alert("סיסמא שגויה");
+			 }
+		 }
+	 }
+	 
+	 function gilCabinetClick(){
+		 if (document.getElementById('cabinetPassCode').value == "" )
+		 {
+			 alert("יש להכניס קוד");
+		} else{
+			if(document.getElementById('cabinetPassCode').value == "111111"){
+				div_hide("cabinetPass");
+				div_show("openCabinet");
+			}else {
+				 alert("קוד שגוי");
+			 }
+		 }
+	 }
+	 
+	 function gilPrinterClick(){
+		 var err = false;
+		 if (document.getElementById('printerPassCode').value == "forTechOnly" ){
+			 alert("לא ניתן להדפיס עם קוד טכנאי");
+			 err=true;
+		}
+		 if (document.getElementById('printerPassCode').value == "forResetOnly" ){
+			 alert("המדפסת אופסה, נא לנסות להדפיס מחדש");
+			 err=true;
+		}
+		 if (document.getElementById('printerPassCode').value == "" ){alert("יש להכניס קוד");}
+		 else{
+			 if(document.getElementById('printerPassCode').value == "forPrintOnly"){
+				 div_hide("printerPass");
+				 div_show("pagePrint");
+			 }else { if(!err){
+				 alert("קוד שגוי");
+			 }}
+		 }
+	 }
+	 
+	 
