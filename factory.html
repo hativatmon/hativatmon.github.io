@@ -10,7 +10,7 @@
 	<link href="elements.css" rel="stylesheet">
 <!-- 	<link href="slider.css" rel="stylesheet">
 	<script src="slider.js"></script> -->
-	<body>
+	<body onload="start()">
 		<img id="Image-Maps-Com-image-maps-2017-02-27-133629" src="http://www.image-maps.com/m/private/0/kc8s5abvl71v1vpcn556o5smb1_factory.png" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-02-27-133629" alt="" />
 		<map name="image-maps-2017-02-27-133629" id="ImageMapsCom-image-maps-2017-02-27-133629">
 		<area id="goBack" alt="" title="" href="main.html" shape="rect" coords="0,467,881,496" style="outline:none;" target="_self"     />
@@ -274,7 +274,7 @@ function checkWin(rows, columns) {
     return win;
 }
 
-$(document).ready(function() {
+function start() {
 	alert("here");
     var rows = 4, columns = 4;
     load(rows,columns,"imgs/slider.png");
@@ -291,7 +291,7 @@ $(document).ready(function() {
         setClicks(0);
         randomize(rows, columns, 100);
     });
-});
+};
 </script>
 	
 	<style>
