@@ -14,10 +14,10 @@
 		<map name="garage1" id="ImageMapsCom-garage1">
 		<area id="gotoRight" alt="" title="" href="garage2.html" shape="rect" coords="854,0,881,474" style="outline:none;" target="_self"     />
 		<area id="gotoBack" alt="" title="" href="main.html" shape="rect" coords="0,471,854,496" style="outline:none;" target="_self"     />
-		<area id="garage1Cabinet" onclick="div_show('abc');" alt="" title="" href="#" shape="rect" coords="170,103,296,232" style="outline:none;" target="_self"     />
+		<area id="garage1Cabinet" onclick="script:fuzeAudio.play();div_show('abc');" alt="" title="" href="#" shape="rect" coords="170,103,296,232" style="outline:none;" target="_self"     />
 		<area id="garage1Can" onclick="garbage()" alt="" title="" href="#" shape="poly" coords="85,372,93,313,61,302,32,315,28,327,14,351,23,377" style="outline:none;" target="_self"     />
 		<area id="garage1Car" onclick="carHorn()" alt="" title="" href="#" shape="poly" coords="832,365,824,249,644,247,641,259,598,260,594,236,512,232,345,233,333,289,265,307,263,335,263,374,277,405,307,403,323,386,358,375,387,375,425,394,430,409,451,413,460,437,490,439,507,417,555,409,582,409,618,429,627,448,666,446,690,405,759,396,775,419,801,421,820,393,818,369" style="outline:none;" target="_self"     />
-		<area id="garage1Box" onclick="garageBox()" alt="" title="" href="" shape="poly" coords="120,292,157,279,214,278,228,333,172,339,133,350" style="outline:none;" target="_self"     />
+		<area id="garage1Box" onclick="garageBox()" alt="" title="" href="#" shape="poly" coords="120,292,157,279,214,278,228,333,172,339,133,350" style="outline:none;" target="_self"     />
 		<area id="garage1Door" onclick="script:alert('הדלת סגורה');" alt="" title="" href="" shape="poly" coords="706,123,708,243,607,248,599,227,377,228,374,129" style="outline:none;" target="_self"     />
 		</map>
 
@@ -27,12 +27,12 @@
 		<div id="popupContact" >
 		<!-- Contact Us Form -->
 		<div id="111" style="width:420px;padding:10px 50px;border:2px solid gray;border-radius:10px;background-color:#fff;">
-		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
-		<h2>חבר את הפיוזים במקום הנכון</h2>
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="script:fuzeAudio.pause();div_hide('abc')">
+		<h2>חבר את הפיוזים במקום הנכון <img id="fuzeSound" src="imgs/muteIcon.png" alt="mute" width="30px" onclick="soundClick('fuzeSound', 'fuzeAudio')" onMouseOver="this.style.cursor='pointer'" style="padding-right:50px"></h2>
 		<hr>
 			<div class="abc" id="garageCabinet">
 			<img src="imgs/fusemaze.jpg" style="width:420px">
-			<table style="width:420px">
+			<table style="width:420px;direction:ltr;">
 			<tr>
 			<td><input id="f1" type=color list=colors style="width:50px"></td>
 			<td><input id="f2" type=color list=colors style="width:50px"></td>
@@ -43,9 +43,10 @@
 			<td><input id="f7" type=color list=colors style="width:50px"></td>
 			</tr>
 			</table>
+			<a href="#" onclick="garageCabinetClick()" id="submit">הדלק את החשמל</a>
 			</div>
-			<div id="cabPaper" style="display:none;">
-				<img src="imgs/menuSurvey.jpg" />
+			<div id="gemp" style="display:none;">
+				<img src="imgs/empGarage.jpg" style="width:400px"/>
 			</div>
 			
 			<datalist id=colors>
@@ -58,7 +59,7 @@
 				<option value=#ffff00>
 			</datalist>
 			<hr>
-			<a href="#" onclick="garageCabinetClick()" id="submit">הדלק את החשמל</a>
+			
 		<hr>
 		</div>
 		

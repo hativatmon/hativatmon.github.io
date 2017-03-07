@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>מחנה רמון</title>
+	
+	</head>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="memory/memory.js"></script>
+	<link href="memory/memory.css" rel="stylesheet">
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+			<img id="Image-Maps-Com-image-maps-2017-03-02-105934" src="imgs/ramon.jpg" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-03-02-105934" alt="" />
+			<map name="image-maps-2017-03-02-105934" id="ImageMapsCom-image-maps-2017-03-02-105934">
+			<area id="back" alt="" title="" href="main.html" shape="rect" coords="0,473,881,496" style="outline:none;" target="_self"     />
+			<area id="gotoOperations" onclick="div_show('abc');" alt="" title="" href="#" shape="rect" coords="16,202,282,417" style="outline:none;" target="_self"     />
+			<area id="openBoxes" onclick="script:morseAudio.play();" alt="" title="" href="#" shape="poly" coords="863,65,801,25,458,145,456,417,817,476,861,455" style="outline:none;" target="_self"     />
+			<area id="plane" onclick="script:alert('KT KAFUJ\nFSH KVHFBX KJSR HA KVZHI T, VXHXNT\nCTU,HU, DSUKU, CTBDKH, CKCS');" alt="" title="" href="#" shape="poly" coords="328,107,404,127,356,134,268,124,235,126,197,107,214,94,203,83,241,86,283,78,295,70,359,65,377,42,385,66,403,71,380,74,333,97" style="outline:none;" target="_self"     />
+			<area id="lift" onclick="div_show('abc2');" alt="" title="" href="#" shape="poly" coords="442,349,445,445,388,447,384,464,325,461,319,453,295,453,281,464,273,439,279,409,283,354,348,352,348,346" style="outline:none;" target="_self"     />
+			</map>
+
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<div id="tofes">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		<div id="doorCode">
+		<h2>הזן קוד לפתיחת הדלת</h2>
+		<hr>
+			<table style="text-align:center; width=400px; direction:ltr;">
+				<style>
+					input[type=text] {
+						width:20px;
+					}
+				</style>
+				<tr>
+				<td><input id="d1" type="text"></td>
+				<td><input id="d2" type="text"></td>
+				<td><input id="d3" type="text"></td>
+				<td><input id="d4" type="text"></td>
+				<td><input id="d5" type="text"></td>
+				<td><input id="d6" type="text"></td>
+				<td><input id="d7" type="text"></td>
+				<td><input id="d8" type="text"></td>
+				</tr>
+				<tr><td >1</td><td>2</td><td>3</td><td >4</td><td >5</td><td>6</td><td>7</td><td>8</td></tr>
+			</table>
+			<hr>
+		<a href="#" onclick="ramonDoorCode()" id="submit">פתח את הדלת</a>
+		</div>
+		<div id="enterBtn" style="display:none">
+			<a href="operations.html" id="submit2" target="_self">כניסה</a>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		</div>
+		
+		<div id="abc2" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2" style="right:6%"">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2" style="width:800px;max-width:800px;height:500px;">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc2')">
+			<div id="picbox" style="direction:ltr">
+			  <span id="boxbuttons">
+				<span class="button">
+				  <span id="counter">0</span>
+				  Clicks
+				</span>
+				<span class="button">
+				  <a onclick="ResetGame();">Reset</a>
+				</span> 
+			  </span>
+			  <div id="boxcard"></div>
+			  
+			</div>
+			<div id="solved" style="display:none">
+				<img src="imgs/cat2.png" style="width:400px;">
+			  </div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+	</body>
+	
+</html>

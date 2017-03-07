@@ -13,22 +13,22 @@
 			<img id="Image-Maps-Com-image-maps-2017-02-25-230430" src="imgs/liat.jpg" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-02-25-230430" alt="" />
 			<map name="image-maps-2017-02-25-230430" id="ImageMapsCom-image-maps-2017-02-25-230430">
 			<area id="gotoHall" alt="" title="" href="hall.html" shape="rect" coords="0,470,881,496" style="outline:none;" target="_self"     />
-			<area id="maHaya" alt="" title="" href="" shape="poly" coords="147,109,15,136,53,302,162,273,177,245" style="outline:none;" target="_self"     />
-			<area id="liatComp" onclick="div_show('abc2');" alt="" title="" href="#" shape="poly" coords="437,229,435,298,393,299,391,316,377,318,375,299,328,301,327,228" style="outline:none;" target="_self"     />
-			<area id="liatPrinter" alt="" title="" href="" shape="poly" coords="732,297,812,314,809,343,788,361,765,355,747,367,703,347,713,334,711,318,710,310" style="outline:none;" target="_self"     />
+			<area id="maHaya" alt="" title="" href="#" shape="poly" coords="147,109,15,136,53,302,162,273,177,245" style="outline:none;" target="_self"     />
+			<area id="liatComp" onclick="script:var compAudio = new Audio('sound/comp.mp3').play();div_show('abc2');" alt="" title="" href="#" shape="poly" coords="437,229,435,298,393,299,391,316,377,318,375,299,328,301,327,228" style="outline:none;" target="_self"     />
+			<area id="liatPrinter" onclick="script:var printAudio = new Audio('sound/printer.mp3').play();" alt="" title="" href="#" shape="poly" coords="732,297,812,314,809,343,788,361,765,355,747,367,703,347,713,334,711,318,710,310" style="outline:none;" target="_self"     />
 			<area id="orgChartLiat" onclick="div_show('abc');" href="#" shape="poly" coords="472,261,448,259,443,216,370,210,377,138,442,135,447,78,549,84,544,139,635,142,640,233,658,235,660,294,468,297" style="outline:none;" target="_self"     />
 			<area id="liatPlant" onclick="liatPlantClick();" href="#" shape="poly" coords="102,361,121,346,118,378,132,378,131,399,120,409,109,454,74,455,63,416,53,399,34,375,59,378,59,351,77,361,87,347" style="outline:none;" target="_self"     />
 			</map>
 
 		<div id="abc">
 		<!-- Popup Div Starts Here -->
-		<div id="popupContact">
+		<div id="popupContact" style="width:550px;max-width:550px;right:5%">
 		<!-- Contact Us Form -->
-		<div id="tofes">
+		<div id="tofes" style="width:550px;max-width:550px;right:5%">
 		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
 		<h2>רשימת עובדים לאירוע חטיבה</h2>
 		<hr>
-			<img src="imgs/empList.png" width="300px">
+			<img src="imgs/empList.png" width="540px">
 		<hr>
 		</div>
 		</div>
@@ -41,7 +41,7 @@
 		<!-- Contact Us Form -->
 		<div id="tofes2" class="tofes2">
 		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc2')">
-			<img src="imgs/bsod.jpg" width="500px">
+			<img onload="" src="imgs/bsod.jpg" width="500px">
 		</div>
 		</div>
 		<!-- Popup Div Ends Here -->

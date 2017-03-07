@@ -7,8 +7,52 @@
   ga('create', 'UA-92768473-1', 'auto');
   ga('send', 'pageview');
 
+	var flowerAudio = new Audio('sound/flower.mp3');
+	var redAudio = new Audio('sound/redPhone.mp3');
+	var alarmAudio = new Audio('sound/alarm.mp3');
+	var carAudio = new Audio('sound/car.mp3');
+	var sliderAudio = new Audio('sound/slider.mp3');
+	var pingpongAudio = new Audio('sound/pingpong.mp3');
+	var printerAudio = new Audio('sound/printer.mp3');
+	var morseAudio = new Audio('sound/morse.mp3');
+	var fuzeAudio = new Audio('sound/fuze.mp3');
+	var backAudio = new Audio('sound/all.mp3');
+	backAudio.loop = true;
 
-
+	function soundClick(ObjId, audio){
+		//alert(document.getElementById('sound').alt);
+		if (document.getElementById(ObjId).alt == "mute"){
+			//alert("true");
+			document.getElementById(ObjId).src = "imgs/playIcon.png";
+			document.getElementById(ObjId).alt = "play";
+			switch(audio){
+				case "backAudio":
+					backAudio.pause();
+					break;
+				case "fuzeAudio":
+					fuzeAudio.pause();
+					break;
+				case "sliderAudio":
+					sliderAudio.pause();
+					break;
+			}
+		}
+		else{
+			document.getElementById(ObjId).src = "imgs/muteIcon.png";
+			document.getElementById(ObjId).alt = "mute";
+			switch(audio){
+				case "backAudio":
+					backAudio.play();
+					break;
+				case "fuzeAudio":
+					fuzeAudio.play();
+					break;
+				case "sliderAudio":
+					sliderAudio.play();
+					break;
+			}
+		}
+	}
 	function mirrorClick()
 	{
 		var x = document.getElementById("back");
@@ -20,6 +64,38 @@
 		{
 			x.style.display='block';
 		}
+	}
+	
+	function safeOpen(){
+		//alert("safe open");
+		var sn1 = document.getElementById("safeN1").value;
+		var sn2 = document.getElementById("safeN2").value;
+		var sn3 = document.getElementById("safeN3").value;
+		var sc1 = document.getElementById("safeC1").value;
+		var sc2 = document.getElementById("safeC2").value;
+		var sc3 = document.getElementById("safeC3").value;
+		
+		if (sn1=="8" & sn2=="13" & sn3=="15" & sc1=="#ff0000" & sc2=="#ffffff" & sc3=="#008000"){
+			div_show("openSafe");
+			div_hide("safeLock");
+		}else{alert("הקוד שגוי");}
+	}
+	
+	function ramonDoorCode(){
+		var d1 = document.getElementById("d1").value;
+		var d2 = document.getElementById("d2").value;
+		var d3 = document.getElementById("d3").value;
+		var d4 = document.getElementById("d4").value;
+		var d5 = document.getElementById("d5").value;
+		var d6 = document.getElementById("d6").value;
+		var d7 = document.getElementById("d7").value;
+		var d8 = document.getElementById("d8").value;
+		
+		if(d4=="S" & d5=="O" & d3=="S" & d6=="V" & d7=="E" & d8=="R" & d1=="P" & d2=="A" ){
+			div_hide("doorCode");
+			div_show("enterBtn");
+			}else{if(d1=="p" & d3=="s"  & d7=="e"  & d4=="s" & d5=="o" & d6=="v" & d2=="a" & d8=="r"){alert("לא לשכוח לדבר עם הטייס לפני הכניסה!");
+				}else{alert("הסיסמא אינה נכונה");}}
 	}
 	
 	// Validating Empty Field
@@ -47,7 +123,7 @@
 			alert("יש להכניס שם משתמש");
 		}else{
 			if(document.getElementById('uname').value == "taliv"){
-				alert("From: Liat Ben Ari\nSent: Tuesday, February 28, 2017 08:00 AM\nTo: Tali Vaknin\nSubject: אירוע חטיבה\n\nהיי טלי,\nהאירוע שנבחר הוא אופציה מספר X\n\nבברכה,\nליאת בן ארי\n\n\n");
+				alert("From: Liat Ben Ari\nSent: Tuesday, February 28, 2017 08:00 AM\nTo: Tali Vaknin\nSubject: אירוע חטיבה\n\nהיי טלי,\nהאירוע שנבחר הוא אופציה מספר 2\n\nבברכה,\nליאת בן ארי\n\n\n");
 				div_hide("abc");
 			}
 			else{
@@ -108,10 +184,11 @@
 	function garageCabinetClick(){
 		if(document.getElementById('f1').value == "#00b050" & document.getElementById('f2').value == "#c00000" & document.getElementById('f3').value == "#7030a0" & document.getElementById('f4').value == "#ffff00" & document.getElementById('f5').value == "#00b0f0" & document.getElementById('f6').value == "#000000" & document.getElementById('f7').value == "#ed7d31")
 		{
-			alert("ok");
+			div_show("gemp");
+			div_hide("garageCabinet");
 		}
 		else {
-			alert(document.getElementById('f1').value+" "+document.getElementById('f2').value+" "+document.getElementById('f3').value+" "+document.getElementById('f4').value+" "+document.getElementById('f5').value+" "+document.getElementById('f6').value+" "+document.getElementById('f7').value+" ");
+			alert("!!!החיבור אינו נכון");
 		}		
 	}
 	
@@ -125,11 +202,12 @@
 		}
 	}
 	
+	function taliPlant() {flowerAudio.play(); alert("חג אביב שמח!!!");}
+	
 	function liatPlantClick(){alert("למה לחטט בצמחים?");}
 	
 	function carHorn() {
-		var carAudio = new Audio('sound/car.mp3');
-             carAudio.play();
+		carAudio.play();
      }
 	 
 	 function emptyC(){alert("הארון ריק");}

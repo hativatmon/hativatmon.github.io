@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>מבצעים</title>
+	
+	</head>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="memory/memory2.js"></script>
+	<link href="memory/memory.css" rel="stylesheet">
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+	<img id="Image-Maps-Com-image-maps-2017-03-04-150803" src="imgs/operations.jpg" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-03-04-150803" alt="" />
+	<map name="image-maps-2017-03-04-150803" id="ImageMapsCom-image-maps-2017-03-04-150803">
+	<area id="goOut" alt="" title="" href="ramon.html" shape="rect" coords="0,472,881,496" style="outline:none;" target="_self"     />
+	<area id="emergency" onclick="script:alarmAudio.play();" alt="" title="" href="#" shape="rect" coords="320,94,474,139" style="outline:none;" target="_self"     />
+	<area id="safe" onclick="div_show('safeCode');" alt="" title="" href="#" shape="poly" coords="250,229,174,231,141,252,142,391,283,393,283,250" style="outline:none;" target="_self"     />
+	<area id="redPhone" onclick="script:redAudio.play();alert('v0lum3\nl1573n');" alt="" title="" href="" shape="poly" coords="421,147,375,145,376,224,388,224,395,235,388,254,389,280,402,275,408,236,408,227,419,225" style="outline:none;" target="_self"     />
+	<area id="bin" onclick="script:alert('צריך להקשיב כדי לפעול בתבונה\n~ סופוקלס ~');" title="" href="#" shape="poly" coords="438,321,431,384,367,406,321,382,313,323,390,311" style="outline:none;" target="_self"     />
+	<area id="monitors" onclick="div_show('abc');" alt="" title="" href="#" shape="poly" coords="784,145,852,136,859,211,847,285,781,273,730,264,690,256,612,257,556,254,552,217,534,209,533,157,608,152,612,209,695,207,691,253,732,263,738,208,789,209" style="outline:none;" target="_self"     />
+	<area id="door" onclick="script:alert('הכניסה למורשים בלבד');" alt="" title="" href="#" shape="poly" coords="4,99,92,83,92,371,63,367,71,339,31,351,22,368,3,350" style="outline:none;" target="_self"     />
+	<area id="plant" onclick="script:alert('לא לשכוח להשקות את הצמחים לפני שיוצאים לחופשה');" alt="" title="" href="" shape="poly" coords="79,448,64,425,56,471,1,468,3,352,22,377,41,356,65,347,51,379,95,377,64,395,71,406" style="outline:none;" target="_self"     />
+	</map>
+
+
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+		<div id="tofes" style="width:800px;max-width:800px;height:500px;">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		
+		<div id="picbox" style="direction:ltr">
+			  <span id="boxbuttons">
+				<span class="button">
+				  <span id="counter">0</span>
+				  Clicks
+				</span>
+				<span class="button">
+				  <a onclick="ResetGame();">Reset</a>
+				</span> 
+			  </span>
+			  <div id="boxcard"></div>
+			  
+		</div>
+		<div id="solved" style="display:none">
+			<img src="imgs/safe.png" style="width:400px;">
+		</div>
+		
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="safeCode" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2" style="align:center">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('safeCode')">
+		<div id="safeLock" style="align:center">
+		<h2>הזן קוד לפתיחת הכספת</h2>
+		<hr>
+			<table style="text-align:center;padding-right:99px;direction:ltr">
+				<tr>
+					<td><input type="number" id="safeN1" style="text-align:center;width:84px;height:20px"></td>
+					<td><input type="number" id="safeN2" style="text-align:center;width:84px;height:20px"></td>
+					<td><input type="number" id="safeN3" style="text-align:center;width:84px;height:20px"	></td>
+				</tr>
+				<tr>
+					<td><input type="color" list="colors" id="safeC1"></td>
+					<td><input type="color" list="colors" id="safeC2"></td>
+					<td><input type="color" list="colors" id="safeC3"></td>
+				</tr>
+				<tr>
+					<td>I</td>
+					<td>II</td>
+					<td>III</td>
+				</tr>
+			</table>
+			
+			<datalist id=colors>
+				<option value=#ffff00>
+				<option value=#008000>
+				<option value=#000000>
+				<option value=#0000ff>
+				<option value=#808080>
+				<option value=#ff0000>
+				<option value=#800080>
+				<option value=#ffc0cb>
+				<option value=#add8e6>
+				<option value=#ffffff>
+				<option value=#a52a2a>
+			</datalist>
+			<hr>
+		<a href="#" onclick="safeOpen()" id="submit">פתח את הכספת</a>
+		</div>
+		<div id="openSafe" style="display:none"><img src="imgs/kujabv.png"></div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+	</body>
+	
+</html>

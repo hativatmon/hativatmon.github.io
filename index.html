@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<title> חטיבתמון 2017 </title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="countDown/jquery-2.0.3.js"></script>
 		<script type="text/javascript" src="countDown/jquery.countdownTimer.js"></script>
@@ -54,7 +55,7 @@
 		text-shadow: 1px 1px #000000;
 	}
 </style>
-<body>
+<body onload="script:backAudio.play();">
 <header>
 	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:3px;opacity:1;margin-left:10px;margin-right:10px;">
 	<img src="imgs/heading.png" alt="חטיבתמון 2017" width="25%" style="padding:3px;">
@@ -63,11 +64,12 @@
 </header>
 <aside> 
 	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:8px;opacity:1">
+	<div style="padding-top:5px;"><img onMouseOver="this.style.cursor='pointer'" id="sound" src="imgs/muteIcon.png" alt="mute" style="width:40px;" onclick="soundClick('sound','backAudio');"></div>
 	<div id="countdowntimer" style="padding-top:5px;"><span class="sideText">נותרו עוד</span><br><span id="future_date"><span></div><span class="sideText">להכרזת הזוכה</span>
 	<div><a href="help.html" target="main"><img src="imgs/helpIcon.png" alt="help" style="width:80px;"></a></div>
 	<div><a href="main.html" target="main"><img src="imgs/homeIcon.png" alt="home" style="width:80px;"></a></div>
 	<div><a href="https://goo.gl/forms/rkzSUPd5Mioe9C3o2" target="main"><img src="imgs/ansIcon.png" alt="answer" style="width:80px;"></a></div>
-	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="main"><img src="imgs/emailIcon.png" alt="email" style="width:80px;"></a></div>
+	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="_blank"><img src="imgs/emailIcon.png" alt="email" style="width:80px;"></a></div>
 	<div><strong style="font-size:14px;">מספר מבקרים</strong>
 		<a href="#" title="visitor counter widget"><img src="https://counter1.fcs.ovh/private/freecounterstat.php?c=3b6facbfa803b60c35ec01698c79df68" border="0" title="visitor counter widget" alt="visitor counter widget"></a>
 
