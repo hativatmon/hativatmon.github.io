@@ -75,7 +75,7 @@
 		var sc2 = document.getElementById("safeC2").value;
 		var sc3 = document.getElementById("safeC3").value;
 		
-		if (sn1=="8" & sn2=="13" & sn3=="15" & sc1=="#ff0000" & sc2=="#ffffff" & sc3=="#008000"){
+		if (sn1=="8" & sn2=="8" & sn3=="15" & sc1=="#ff0000" & sc2=="#ffffff" & sc3=="#008000"){
 			div_show("openSafe");
 			div_hide("safeLock");
 		}else{alert("הקוד שגוי");}
