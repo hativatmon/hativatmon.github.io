@@ -19,6 +19,15 @@
 	var backAudio = new Audio('sound/all.mp3');
 	backAudio.loop = true;
 
+	function opPlant(){
+		redAudio.play();
+		alert('v0lum3\nl1573n');
+	}
+	
+	function opBin(){
+		alert('צריך להקשיב כדי לפעול בתבונה\n~ סופוקלס ~');
+	}
+	
 	function soundClick(ObjId, audio){
 		//alert(document.getElementById('sound').alt);
 		if (document.getElementById(ObjId).alt == "mute"){
