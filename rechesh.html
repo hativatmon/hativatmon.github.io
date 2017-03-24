@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>רכש</title>
+	
+	</head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<link href="elements.css" rel="stylesheet">
+		<script src="slider3.js"></script>
+		<link href="slider.css" rel="stylesheet">
+		<link href="elements.css" rel="stylesheet">
+	
+	<body>
+	
+		<img id="Image-Maps-Com-image-maps-2017-03-22-152239" src="imgs/rechesh.jpg" border="0" width="881" height="496" orgWidth="884" orgHeight="549" usemap="#image-maps-2017-03-22-152239" alt="" />
+		<map name="image-maps-2017-03-22-152239" id="ImageMapsCom-image-maps-2017-03-22-152239">
+		<area id="recheshBack" alt="" title="" href="main2.html" shape="rect" coords="0,471,884,497" style="outline:none;" target="_self"     />
+		<area id="plantRechesh" onclick="recheshPlant();" alt="" title="" href="" shape="poly" coords="734,258,773,254,784,209,772,203,775,192,807,196,779,144,775,128,748,121,723,133,719,159,709,173,701,193,727,200,730,207,723,211" style="outline:none;" target="_self"     />
+		<area id="safeRechesh" onclick="div_show('recheshHila');" alt="" title="" href="#" shape="poly" coords="678,234,722,235,730,257,754,263,779,256,781,234,809,273,812,438,647,439,646,274" style="outline:none;" target="_self"     />
+		<area id="bin" onclick="rBin()" alt="" title="" href="#" shape="poly" coords="74,374,57,347,51,339,40,342,27,336,23,350,14,340,0,343,0,451,27,461,60,448" style="outline:none;" target="_self"     />
+		<area id="comp" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="170,203,266,202,261,273,218,271,218,290,203,292,198,271,158,271,160,204" style="outline:none;" target="_self"     />
+		<area id="cabinet" onclick="div_show('recheshCabinet');" alt="" title="" href="#" shape="poly" coords="513,153,605,156,608,337,588,364,487,365,488,168" style="outline:none;" target="_self"     />
+		</map>
+
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact" style="width:550px;max-width:550px;right:5%">
+		<!-- Contact Us Form -->
+		<div id="tofes" style="width:550px;max-width:550px;right:5%">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		
+		<style>
+			.ht{
+				width:50px;
+				height:50px;
+				border: 1px solid gray;
+				border-radius:4px;
+			}
+			.ti{
+				height:30px;
+				width:70px;
+				font-size:18px;
+				text-align:center;
+				background-color:lightgray;
+				color:black;
+				padding:1px;
+				margin:1px;
+				border: 1px solid gray;
+			}
+			.ti2{
+				height:25px;
+				width:70px;
+				font-size:18px;
+				text-align:center;
+				background-color:lightgray;
+				color:black;
+				padding:0px;
+				margin:0px;
+				border: 1px solid gray;
+			}
+			.in1{
+				background-color:lightgray;
+				border: 1px solid gray;
+				border-radius:3px;
+				color:black;
+				margin:1px;
+				text-align:center;
+				width:210px;
+			}
+			.b1{
+				width:200px;
+				height:40px;
+				font-size:20px;
+				padding: 2px;
+				margin: 3px;
+				border-radius:5px;
+				background-color:darkred;
+				color:white;
+			}
+			.ci{
+				background-color:lightgray;
+				color:gray;
+				width:70px;
+				height:25px;
+				padding:0px;
+				margin:0px;
+			}
+	</style>
+		
+		<div align="center"  id="hilaCompLogin">
+			<h2>הזן שם משתמש וסיסמא</h2>
+			<hr>
+				<table style="font-size:18px;margin:2px;">
+					<tr>
+						<td colspan="3" style="font-size:18px;font-weight:bold">שם משתמש</td>
+					</tr>
+					<tr>
+						<td colspan="3"><input id="hilaCompUname" type="text" style="background-color:lightgray;border: 1px solid gray;
+				border-radius:3px;color:black;margin:1px;text-align:center;width:210px;"></td>
+					</tr>
+					<tr >
+						<td colspan="3" style="font-size:18px;font-weight:bold">סיסמא</td>
+					</tr>
+					<tr>
+						<td style="background-color:#feed01;color:#feed01;width:50px;height:50px;border: 1px solid gray;border-radius:4px;"></td>
+						<td style="background-color:#5c99c7;color:#5c99c7;width:50px;height:50px;border: 1px solid gray;border-radius:4px;"></td>
+						<td style="background-color:#f49632;color:#f49632;width:50px;height:50px;border: 1px solid gray;border-radius:4px;"></td>
+					</tr>
+					<tr>
+						<td><input class="ti" type="number" id="rYellow" ></td>
+						<td><input class="ti" type="number" id="rBlue" ></td>
+						<td><input class="ti" type="number" id="rOrange" ></td>
+					</tr>
+					
+				</table>
+			<hr>
+				<input type="button" class="b1" onclick="hilaCompClick()" value="כניסה למחשב">
+			</div>
+			<div id="hilaCompIn" style="display:none">
+				<img src="imgs/giftMail.jpg" style="width:500px">
+			</div>
+		
+		
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		
+		<div id="recheshCabinet" class="abc2" style="opacity:.98;">
+		<!-- Popup Div Starts Here -->
+		<div id="111" style="position:absolute;left:50%;top:5%;margin-left:-202px;direction:ltr;opacity:1;">
+		<!-- Contact Us Form -->
+		<div id="slide" style="padding:5px 5px;border:2px solid gray;border-radius:10px;background-color:#fff;opacity:1;">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('recheshCabinet')">
+			<div style="opacity:1;">
+				<div id="puzzle" style="opacity:1;"></div>
+				<div id="clicks">0</div>
+				<input type="checkbox" id="displayHelp" value="" />עזרה 
+				<button id="randomize">ערבב</button>
+			</div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		
+		<div id="recheshHila" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupSafe" class="popupContact2" style="margin:0px;">
+		<!-- Contact Us Form -->
+		<div id="tofesSafe" class="tofes2" style="width:650px;margin:0px;">
+		<img id="closeSafe" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('recheshHila')">
+			<div align="center"  id="safeCode">
+			</br>
+			<h2>הזן קוד לפתיחת הכספת</h2>
+
+			<hr>
+			</br>
+				<table style="font-size:18px;margin:0px;">
+					<tr>
+						<td><input class="ti2" type="number" id="sn1" ></td>
+						<td><input class="ti2" type="number" id="sn2" ></td>
+						<td><input class="ti2" type="number" id="sn3" ></td>
+						<td><input class="ti2" type="number" id="sn4" ></td>
+						<td><input class="ti2" type="number" id="sn5" ></td>
+						<td><input class="ti2" type="number" id="sn6" ></td>
+					</tr>
+					<tr><td></br></td></tr>
+					<tr>
+						<td><input id="sc1" class="ci" type=color list=colors></td>
+						<td><input id="sc2" class="ci" type=color list=colors></td>
+						<td><input id="sc3" class="ci" type=color list=colors></td>
+						<td><input id="sc4" class="ci" type=color list=colors></td>
+						<td><input id="sc5" class="ci" type=color list=colors></td>
+						<td><input id="sc6" class="ci" type=color list=colors></td>
+					</tr>
+					
+					<datalist id=colors>
+						<option value=#68bebd>
+						<option value=#594541>
+						<option value=#e5b4c7>
+						<option value=#c7487b>
+						<option value=#908b87>
+						<option value=#e7e5e6>
+						<option value=#524063>
+						<option value=#6d8c45>
+						<option value=#e6d293>
+						<option value=#b92c37>
+					</datalist>
+					
+				</table>
+				</br>
+			<hr>
+			</br>
+				<input type="button" class="b1" onclick="openSafeRechesh()" value="פתח את הכספת">
+			</div>
+			<div id="safeOpen" style="display:none">
+				<img src="imgs/prices.jpg" style="width:500px">
+			</div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		
+		
+	</body>
+	
+</html>

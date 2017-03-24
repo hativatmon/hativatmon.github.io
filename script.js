@@ -18,7 +18,80 @@
 	var fuzeAudio = new Audio('sound/fuze.mp3');
 	var backAudio = new Audio('sound/all.mp3');
 	backAudio.loop = true;
+	
+	function startrange(){
+		if (document.getElementById('tWhite').value=="2"&&document.getElementById('tBlack').value=="1"&&document.getElementById('tBlue').value=="2"&&document.getElementById('tRed').value=="5"&&document.getElementById('tYellow').value=="2")
+		{
+			div_hide('rangePass');
+			div_show('picbox');
+		}else{
+			alert("הקוד שגוי");
+		}
+	}
+	
+	function openSafeRechesh(){
+		
+			/* alert(document.getElementById('sn1').value + "sn1" + document.getElementById('sc1').value + "c1 \n" +
+				document.getElementById('sn2').value + "sn2" + document.getElementById('sc2').value + "c2 \n" +
+				document.getElementById('sn3').value + "sn3" + document.getElementById('sc3').value + "c3 \n" +
+				document.getElementById('sn4').value + "sn4" + document.getElementById('sc4').value + "c4 \n" +
+				document.getElementById('sn5').value + "sn5" + document.getElementById('sc5').value + "c5 \n" +
+				document.getElementById('sn6').value + "sn6" + document.getElementById('sc6').value + "c6 \n" ); */
+			if(document.getElementById('sn1').value == "82" && document.getElementById('sc1').value == "#c7487b" && 
+			document.getElementById('sn2').value == "79" && document.getElementById('sc2').value == "#e7e5e6" && 
+			document.getElementById('sn3').value == "63" && document.getElementById('sc3').value == "#e5b4c7" && 
+			document.getElementById('sn4').value == "54" && document.getElementById('sc4').value == "#68bebd" && 
+			document.getElementById('sn5').value == "51" && document.getElementById('sc5').value == "#b92c37" && 
+			document.getElementById('sn6').value == "46" && document.getElementById('sc6').value == "#6d8c45")
+			{
+				div_hide('safeCode');
+				div_show('safeOpen');
+			}
+			else{
+				alert("הקוד שגוי");
+			}
+	}
+	
+	function recheshPlant(){
+		alert("n<n<n<n<n<n");
+	}
+	
+	function hilaCompClick(){
+		if(document.getElementById('hilaCompUname').value=="hhiillaarr" && document.getElementById('rYellow').value=="3" && 
+		document.getElementById('rBlue').value=="5" && document.getElementById('rOrange').value=="3" )
+		{
+			div_hide('hilaCompLogin');
+			div_show('hilaCompIn');
+		}
+		else{
+			alert("הסיסמא ו/או קוד המשתמש שגויים");
+		}
+	}
+	
+	function rBin(){
+		alert('From: צוות מחשוב\nSent: Thursday, March 2, 2017 8:45 PM\nTo: Hila Refael\nSubject: שם משתמש\n\nהילה שלום,\nשם המשתמש למחשב שלך הוא:\nhhiillaarr\n\nבברכה,\nצוות מחשוב\n');
+	}
 
+	function RcompClick(){
+		if(document.getElementById("RcompUname").value == "rsimcomp" && document.getElementById("RcompPass").value == "141284"){
+			div_show('rCompIn');
+			div_hide('rCompLogin');
+		}
+		else{alert('הסיסמא שגויה');}
+	}
+	
+	function LcompClick(){
+		if(document.getElementById("LcompUname").value == "lsimcomp" && document.getElementById("p1").value == "#007f0e" && document.getElementById("p2").value == "#80006f" && document.getElementById("p3").value == "#20007f"){
+			div_show('lCompIn');
+			div_hide('lCompLogin');
+		}
+		else{alert('הסיסמא שגויה');}
+	}
+	
+	function simBin(){
+		alert("From: צוות מחשוב\nSent: Thursday, March 23, 2017 8:45 PM\nTo: צוות סימולטור\nSubject: שם משתמש\n\nצוות סימולטור,\nשם המשתמש למחשב ימין הוא:\nrsimcomp\nשם המשתמש למחשב שמאל הוא:\nlsimcomp\nבברכה,\nצוות מחשוב\n");
+	}
+	
 	function opPlant(){
 		redAudio.play();
 		alert('v0lum3\nl1573n');

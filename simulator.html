@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>סימולטור</title>
+	
+	</head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link href="elements.css" rel="stylesheet">
+	<script src="slider2.js"></script>
+	<link href="slider.css" rel="stylesheet">
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+		<img id="Image-Maps-Com-image-maps-2017-03-22-154446" src="imgs/simulator.jpg" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-03-22-154446" alt="" />
+		<map name="image-maps-2017-03-22-154446" id="ImageMapsCom-image-maps-2017-03-22-154446">
+		<area id="back" alt="" title="" href="main2.html" shape="rect" coords="0,470,881,496" style="outline:none;" target="_self"     />
+		<area id="bin" onclick="simBin()" alt="" title="" href="#" shape="poly" coords="609,385,656,375,727,388,723,436,676,462,617,441" style="outline:none;" target="_self"     />
+		<area id="simulator" onclick="div_show('abc')" alt="" title="" href="#" shape="poly" coords="627,172,627,224,651,232,650,361,613,375,537,403,525,421,513,427,494,412,485,411,401,346,415,341,415,327,385,227,409,220,417,228,435,223,462,225,483,266,494,297,507,283,511,230,502,227,500,193,554,193,594,187" style="outline:none;" target="_self"     />
+		<area id="window" onclick="div_show('abc2');" alt="" title="" href="#" shape="poly" coords="800,201,807,241,813,287,809,302,791,310,772,313,756,301,752,268,747,229,744,206,752,201,774,199" style="outline:none;" target="_self"     />
+		<area id="compLeft" onclick="div_show('compL')" alt="" title="" href="#" shape="poly" coords="160,291,162,335,204,355,240,338,215,326,212,289" style="outline:none;" target="_self"     />
+		<area id="compRight" onclick="div_show('compR')" alt="" title="" href="#" shape="poly" coords="242,284,288,280,289,312,311,321,269,337,242,324" style="outline:none;" target="_self"     />
+		</map>
+
+
+		<div id="abc" style="opacity:.98;">
+		<!-- Popup Div Starts Here -->
+		<div id="111" style="position:absolute;left:50%;top:5%;margin-left:-202px;direction:ltr;opacity:1;">
+		<!-- Contact Us Form -->
+		<div id="slide" style="padding:5px 5px;border:2px solid gray;border-radius:10px;background-color:#fff;opacity:1;">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+			<div style="opacity:1;">
+				<div id="puzzle" style="opacity:1;"></div>
+				<div id="clicks">0</div>
+				<input type="checkbox" id="displayHelp" value="" />עזרה 
+				<button id="randomize">ערבב</button>
+			</div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="abc2" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc2')">
+			<img src="imgs/planeBanner.gif" width="500px">
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<style>
+			.in1{
+				background-color:lightgray;
+				border: 1px solid gray;
+				border-radius:3px;
+				color:black;
+				padding:10px;
+				margin:1px;
+				text-align:center;
+			}
+			
+			.b1{
+				width:200px;
+				height:40px;
+				font-size:20px;
+				padding: 2px;
+				margin: 3px;
+				border-radius:3px;
+				background-color:darkred;
+			}
+			
+			.c1{
+				background-color:lightgray;
+				color:gray;
+				width:80px;
+				height:50px;
+				padding:0;
+			}
+		</style>
+		
+		<div id="compR" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupcompR" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofescompR" class="tofes2">
+		<img id="closecompR" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('compR')">
+			<div align="center" id="rCompLogin">
+			<h2>הזן שם משתמש וסיסמא</h2>
+			<hr>
+				<table style="font-size:18px;margin:2px;">
+					<tr>
+						<td>שם משתמש</td>
+						<td><input id="RcompUname" type="text" class="in1"></td>
+					</tr>
+					<tr>
+						<td>סיסמא</td>
+						<td><input id="RcompPass" type="text" class="in1"></td>
+					</tr>
+				</table>
+			<hr>
+				<input type="button" class="b1" onclick="RcompClick()" value="כניסה למחשב">
+			</div>
+			<div id="rCompIn" style="display:none">
+				<img src="imgs/cat3.png" style="width:400px">
+			</div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="compL" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupcompL" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofescompL" class="tofes2">
+		<img id="closecompL" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('compL')">
+			<div align="center"  id="lCompLogin">
+			<h2>הזן שם משתמש וסיסמא</h2>
+			<hr>
+				<table style="font-size:18px;margin:2px;">
+					<tr>
+						<td>שם משתמש</td>
+						<td colspan="2"><input id="LcompUname" type="text" class="in1"></td>
+					</tr>
+					<tr colspan="3">
+						<td>סיסמא</td>
+					</tr>
+					<tr>
+						<td><input id="p3" class="c1" type=color list=colors></td>
+						<td><input id="p2" class="c1" type=color list=colors></td>
+						<td><input id="p1" class="c1" type=color list=colors></td>
+					</tr>
+					
+					<datalist id=colors>
+						<option value=#8c8c8c>
+						<option value=#ffff00>
+						<option value=#20007f>
+						<option value=#66ffff>
+						<option value=#ffffff>
+						<option value=#80006f>
+						<option value=#00ff00>
+						<option value=#ff0000>
+						<option value=#007f0e>
+						<option value=#ff00ff>
+					</datalist>
+					
+				</table>
+			<hr>
+				<input type="button" class="b1" onclick="LcompClick()" value="כניסה למחשב">
+			</div>
+			<div id="lCompIn" style="display:none">
+				<img src="imgs/women.jpg" style="width:500px">
+			</div>
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+	</body>
+	
+</html>

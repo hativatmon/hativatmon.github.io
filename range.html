@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>מטווח</title>
+	
+	</head>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="memory/memoryRange.js"></script>
+	<link href="memory/memory.css" rel="stylesheet">
+	<link href="elements.css" rel="stylesheet">
+	<body>
+	
+		<img id="Image-Maps-Com-image-maps-2017-03-22-155011" src="imgs/range.jpg" border="0" width="881" height="496" orgWidth="881" orgHeight="496" usemap="#image-maps-2017-03-22-155011" alt="" />
+		<map name="image-maps-2017-03-22-155011" id="ImageMapsCom-image-maps-2017-03-22-155011">
+		<area id="back" alt="" title="" href="main2.html" shape="rect" coords="0,471,881,496" style="outline:none;" target="_self"     />
+		<area id="range" onclick="div_show('abc')" alt="" title="" href="#" shape="rect" coords="331,116,766,219" style="outline:none;" target="_self"     />
+		<area id="ammo" onclick="div_show('ammoBox')" alt="" title="" href="#" shape="poly" coords="15,340,24,405,87,437,196,362,197,315,147,307" style="outline:none;" target="_self"     />
+		<area id="bin" onclick="div_show('rangeBin')" alt="" title="" href="#" shape="poly" coords="841,467,846,463,851,436,859,391,854,379,837,369,819,367,803,368,783,372,771,381,768,391,771,405,758,411,752,416,747,426,743,443,746,461,749,468" style="outline:none;" target="_self"     />
+		</map>
+		
+		<style>
+			.tt{
+				width:60px;
+				height:60px;
+				border: 1px solid gray;
+				border-radius:4px;
+			}
+			.ti{
+				height:30px;
+				width:60px;
+				font-size:18px;
+				text-align:center;
+			}
+		</style>
+
+
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact" style="right:5%;">
+		<!-- Contact Us Form -->
+		<div id="tofes" style="width:800px;max-width:800px;height:500px;">
+		<img id="close" src="imgs/x.png" style="width:30px" onclick ="div_hide('abc')">
+		<div id="rangePass" align="center">
+			</br>
+			<h2>הכנס קוד להפעלת המטווח</h2>
+			</br>
+			<hr>
+			</br>
+			</br>
+			<table>
+				<tr style="height:90xp">
+					<td class="tt" style="background-color:#ffffff;color:#ffffff">-</td>
+					<td class="tt" style="background-color:#000000;color:#000000">-</td>
+					<td class="tt" style="background-color:#4286f4;color:#4286f4">-</td>
+					<td class="tt" style="background-color:#ff0000;color:#ff0000">-</td>
+					<td class="tt" style="background-color:#fffa00;color:#fffa00">-</td>
+				</tr>
+				<tr>
+					<td><input class="ti" type="number" id="tWhite" ></td>
+					<td><input class="ti" type="number" id="tBlack" ></td>
+					<td><input class="ti" type="number" id="tBlue" ></td>
+					<td><input class="ti" type="number" id="tRed" ></td>
+					<td><input class="ti" type="number" id="tYellow" ></td>
+				</tr>
+			</table>
+			</br>
+			</br>
+			<hr>
+			</br>
+			<input style="width:160px;height:40px;color:white;background-color:darkred;font-weight:bold;font-size:18px;border-radius:5px;" onclick="startrange()" type="button" value="הפעל">
+		</div>
+		
+		<div id="picbox" style="direction:ltr;display:none;">
+			  <span id="boxbuttons">
+				<span class="button">
+				  <span id="counter">0</span>
+				  Clicks
+				</span>
+				<span class="button">
+				  <a onclick="ResetGame();">Reset</a>
+				</span> 
+			  </span>
+			  <div id="boxcard"></div>
+			  
+		</div>
+		<div id="solved" style="display:none">
+			<img src="imgs/cat1.png" style="width:400px;">
+		</div>
+		
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="rangeBin" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('rangeBin')">
+			<img src="imgs/target.jpg" width="450px">
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+		<div id="ammoBox" class="abc2">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact2" class="popupContact2">
+		<!-- Contact Us Form -->
+		<div id="tofes2" class="tofes2">
+		<img id="close2" class="close2" src="imgs/x.png" style="width:30px" onclick ="div_hide('ammoBox')">
+			<img src="imgs/ammo.jpg" width="450px">
+		</div>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+		
+	</body>
+	
+</html>
