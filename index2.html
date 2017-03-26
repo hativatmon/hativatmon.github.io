@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> חטיבתמון 2017 </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="countDown/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="countDown/jquery.countdownTimer.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="countDown/jquery.countdownTimer.css" />
+	</head>
+<style>
+	body {
+		background-image:url(imgs/back.jpg);
+		font-family:sans-serif;
+		direction:rtl;
+    }
+    #content {
+        width: 83%;
+		max-width:calc(100%-200px);
+        height:100%;
+        max-height: calc(100% - 80px);
+        overflow: scroll;
+        padding: 0px 1% !important;
+        margin-top: 80px !important;
+		margin-right:220px;
+    }
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		width: 100%;
+		height: 80px;
+		background-image: url(imgs/headBack.jpg);
+		position: fixed;
+		top: 0;
+	}
+	aside {
+		display:block;
+		position:fixed;
+		background-image:url(imgs/headBack.jpg);
+		top: 80px;
+		width: 200px;
+		height:100%;
+		max-height:calc(100%-80px);
+		overflow:scroll;
+	}
+	
+	.sideText{
+		color:#008080;
+		font-weight:bold;
+		font-size:18px;
+		text-shadow: 1px 1px #000000;
+	}
+</style>
+<body onload="script:backAudio.play();">
+<header>
+	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:3px;opacity:1;margin-left:10px;margin-right:10px;">
+	<img src="imgs/heading.png" alt="חטיבתמון 2017" width="25%" style="padding:3px;">
+	</div>
+	
+</header>
+<aside> 
+	<div align="center" style="background-color: #d9d9d9;border-radius:15px;border:3px solid #001a1a;margin:8px;opacity:1">
+	<div style="padding-top:5px;"><img onMouseOver="this.style.cursor='pointer'" id="sound" src="imgs/muteIcon.png" alt="mute" style="width:40px;" onclick="soundClick('sound','backAudio');"></div>
+	<div id="countdowntimer" style="padding-top:5px;"><span class="sideText">נותרו עוד</span><br><span id="future_date"><span></div><span class="sideText">להכרזת הזוכה</span>
+	<div><a href="help.html" target="main"><img src="imgs/helpIcon.png" alt="help" style="width:80px;"></a></div>
+	<div><a href="main.html" target="main"><img src="imgs/homeIcon.png" alt="home" style="width:80px;"></a></div>
+	<div><a href="https://goo.gl/forms/rkzSUPd5Mioe9C3o2" target="main"><img src="imgs/ansIcon.png" alt="answer" style="width:80px;"></a></div>
+	<div><a href="https://goo.gl/forms/HqGrpu6bg94sG3KL2" target="_blank"><img src="imgs/emailIcon.png" alt="email" style="width:80px;"></a></div>
+	<div><strong style="font-size:14px;">מספר מבקרים</strong>
+		<a href="#" title="visitor counter widget"><img src="https://counter1.fcs.ovh/private/freecounterstat.php?c=3b6facbfa803b60c35ec01698c79df68" border="0" title="visitor counter widget" alt="visitor counter widget"></a>
+
+	</div>
+	</div>
+	
+</aside>
+<iframe name="main" style="border:none" id="content" src="help.html" align="center"></iframe>
+
+<script>
+$(function(){
+	$('#future_date').countdowntimer({
+		dateAndTime : "2017/04/06 00:00:00",
+		size : "sm",
+		regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+		regexpReplaceWith: "$1 <span class='displayformat'> ימים</span> <br> $2 <span class='displayformat'>שעות</span> <br> $3 <span class='displayformat'>דקות</span> <br> $4<span class='displayformat'> שניות</span>"
+	});
+});
+</script>
+<style type="text/css">
+.displayformat {
+	font-size:12px;
+	font-style: italic;
+}
+</style>	
+</body>
+</html>
