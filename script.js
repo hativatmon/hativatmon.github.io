@@ -89,7 +89,7 @@
 	}
 	
 	function simBin(){
-		alert("From: צוות מחשוב\nSent: Thursday, March 23, 2017 8:45 PM\nTo: צוות סימולטור\nSubject: שם משתמש\n\nצוות סימולטור,\nשם המשתמש למחשב ימין הוא:\nrsimcomp\nשם המשתמש למחשב שמאל הוא:\nlsimcomp\nבברכה,\nצוות מחשוב\n");
+		alert("From: צוות מחשוב\nSent: Thursday, March 2, 2017 8:45 PM\nTo: צוות סימולטור\nSubject: שם משתמש\n\nצוות סימולטור,\nשם המשתמש למחשב ימין הוא:\nrsimcomp\nשם המשתמש למחשב שמאל הוא:\nlsimcomp\nבברכה,\nצוות מחשוב\n");
 	}
 	
 	function opPlant(){
